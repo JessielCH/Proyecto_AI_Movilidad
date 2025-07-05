@@ -1,14 +1,16 @@
-# Dependencias principales
+# Dependencias principales con versiones compatibles
 streamlit==1.32.0
 opencv-python==4.9.0.80
 ultralytics==8.2.0
 tensorflow-cpu==2.14.0
 numpy==1.26.4
 ollama==0.5.1
-protobuf==3.20.3  # Versión compatible con TensorFlow Lite
+protobuf==3.20.3
 
-# Dependencias secundarias necesarias
-pillow==10.4.0  # Usado por OpenCV y YOLOv8
-matplotlib==3.10.3  # Usado por YOLOv8 para visualización
-torch==2.5.1+cpu  # Requerido por ultralytics/YOLOv8
-torchvision==0.20.1+cpu  # Requerido por ultralytics/YOLOv8
+# Dependencias de PyTorch (versiones estándar sin +cpu)
+torch==2.5.1
+torchvision==0.20.1
+
+# Otras dependencias esenciales
+pillow==10.4.0
+matplotlib==3.10.3
